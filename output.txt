@@ -4,8 +4,8 @@ DATA Packet
 send time:        2023-01-26 01:26:05.428
 requester addr:   128.105.37.145
 Sequence num:     100
-length:          	22
-payload:         	*Thi
+length:           22
+payload:          *Thi
 
 END Packet
 send time:       	2023-01-26 01:26:06.429
