@@ -1,0 +1,85 @@
+-----------------------------------------------------------------------------
+sender1’s print information:
+DATA Packet
+send time:       	2023-01-26 01:26:05.428
+requester addr:  	128.105.37.145
+Sequence num:     100
+length:          	22
+payload:         	*Thi
+
+END Packet
+send time:       	2023-01-26 01:26:06.429
+requester addr:  	128.105.37.145
+Sequence num:     122
+length:          	0
+payload:         	
+
+
+-----------------------------------------------------------------------------
+sender2’s print information:
+DATA Packet
+send time:       	2023-01-26 01:26:05.428
+requester addr:  	128.105.37.145:5002
+Sequence num:     100
+length:          	19
+payload:         	This
+
+END Packet
+send time:       	2023-01-26 01:26:06.429
+requester addr:  	128.105.37.145:5002
+Sequence num:     119
+length:          	0
+payload:         
+
+
+-----------------------------------------------------------------------------
+Requester’s print information:	
+DATA Packet
+recv time:    		2023-01-26 01:26:05.428
+sender addr:  		128.105.37.145:5000
+sequence:     		100
+length:       		22
+payload:      		*Thi
+
+DATA Packet
+recv time:    		2023-01-26 01:26:05.428
+sender addr:  		128.105.37.145:5002
+sequence:     		100
+length:       		19
+payload:      		This
+
+End Packet
+recv time:    		2023-01-26 01:26:06.429
+sender addr:  		128.105.37.145:5000
+sequence:     		0
+length:       		0
+payload:      		0
+
+Summary
+sender addr:  			      128.105.37.145:5000
+Total Data packets:  		  1
+Total Data bytes:		      22
+Average packets/second:  	1
+Duration of the test:  		1001  ms
+
+End Packet
+recv time:    		2023-01-26 01:26:06.429
+sender addr:  		128.105.37.145:5002
+sequence:     		0
+length:       		0
+payload:      		0
+
+Summary
+sender addr:  			      128.105.37.145:5002
+Total Data packets:  		  1
+Total Data bytes:		      19
+Average packets/second:   1
+Duration of the test:  		1001  ms
+
+
+-----------------------------------------------------------------------------
+In addition, a file split.txt will be generated in the directory requester/. 
+The content should be:
+
+*This is split1.txt.
+*This is split2.txt.
