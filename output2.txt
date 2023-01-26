@@ -1,0 +1,127 @@
+-----------------------------------------------------------------------------
+sender1’s print information:
+DATA Packet
+send time:    2023-01-26 01:48:41.982
+requester addr:  128.105.37.145:5000
+sequence:     100
+length:       10
+payload:      *Thi
+
+DATA Packet
+send time:    2023-01-26 01:48:42.983
+requester addr:  128.105.37.145:5000
+sequence:     110
+length:       10
+payload:      plit
+
+DATA Packet
+send time:       2023-01-26 01:48:43.985
+requester addr:  128.105.37.145:5000
+sequence:        120
+length:          2
+payload:         
+*
+
+END Packet
+send time:       2023-01-26 01:48:44.986
+requester addr:  128.105.37.145:5000
+sequence:        122
+length:          0
+payload:  	
+
+
+-----------------------------------------------------------------------------
+sender2’s print information:
+DATA Packet
+send time:    2023-01-26 01:48:41.982
+requester addr:  128.105.37.145:5002
+sequence:     100
+length:       10
+payload:      This
+
+DATA Packet
+send time:       2023-01-26 01:48:42.983
+requester addr:  128.105.37.145:5002
+sequence:        110
+length:          9
+payload:         lit2
+
+END Packet
+send time:       2023-01-26 01:48:43.985
+requester addr:  128.105.37.145:5002
+sequence:        119
+length:          0
+payload:        
+
+
+-----------------------------------------------------------------------------
+DATA Packet
+recv time:    2023-01-26 01:48:41.982
+sender addr:  128.105.37.145:5000
+sequence:     100
+length:       10
+payload:      *Thi
+
+DATA Packet
+recv time:    2023-01-26 01:48:41.982
+sender addr:  128.105.37.145:5002
+sequence:     100
+length:       10
+payload:      This
+
+DATA Packet
+recv time:    2023-01-26 01:48:42.983
+sender addr:  128.105.37.145:5000
+sequence:     110
+length:       10
+payload:      plit
+
+DATA Packet
+recv time:    2023-01-26 01:48:42.984
+sender addr:  128.105.37.145:5002
+sequence:     110
+length:       9
+payload:      lit2
+
+DATA Packet
+recv time:    2023-01-26 01:48:43.985
+sender addr:  128.105.37.145:5000
+sequence:     120
+length:       2
+payload:      
+*
+
+End Packet
+recv time:    2023-01-26 01:48:43.985
+sender addr:  128.105.37.145:5002
+sequence:     122
+length:       0
+payload:      0
+
+Summary
+sender addr:             128.105.37.145:5002
+Total Data packets:      2
+Total Data bytes:        22
+Average packets/second:  1
+Duration of the test:    2002  ms
+
+End Packet
+recv time:     2023-01-26 01:48:44.986
+sender addr:   128.105.37.145:5000
+sequence:      119
+length:        0
+payload:       0
+
+Summary
+sender addr:             128.105.37.145:5000
+Total Data packets:      3
+Total Data bytes:        19
+Average packets/second:  1
+Duration of the test:    3003  ms
+
+-----------------------------------------------------------------------------
+In addition, a file split.txt will be generated in the directory requester/. 
+The content should be:
+
+*This is split1.txt.
+*This is split2.txt.
