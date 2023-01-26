@@ -1,18 +1,18 @@
 -----------------------------------------------------------------------------
 sender1’s print information:
 DATA Packet
-send time:    2023-01-26 01:48:41.982
+send time:       2023-01-26 01:48:41.982
 requester addr:  128.105.37.145:5000
-sequence:     100
-length:       10
-payload:      *Thi
+sequence:        100
+length:          10
+payload:         *Thi
 
 DATA Packet
-send time:    2023-01-26 01:48:42.983
+send time:       2023-01-26 01:48:42.983
 requester addr:  128.105.37.145:5000
-sequence:     110
-length:       10
-payload:      plit
+sequence:        110
+length:          10
+payload:         plit
 
 DATA Packet
 send time:       2023-01-26 01:48:43.985
