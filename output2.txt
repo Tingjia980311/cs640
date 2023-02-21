@@ -124,4 +124,5 @@ In addition, a file split.txt will be generated in the directory requester/.
 The content should be:
 
 *This is split1.txt.
-*This is split2.txt.
+*
+This is split2.txt.
