@@ -2,14 +2,14 @@
 sender1’s print information:
 DATA Packet
 send time:        2023-01-26 01:26:05.428
-requester addr:   128.105.37.145
+requester addr:   128.105.37.145:5000
 Sequence num:     100
 length:           22
 payload:          *Thi
 
 END Packet
 send time:        2023-01-26 01:26:06.429
-requester addr:   128.105.37.145
+requester addr:   128.105.37.145:5000
 Sequence num:     122
 length:           0
 payload:         	
@@ -51,7 +51,7 @@ payload:          This
 End Packet
 recv time:        2023-01-26 01:26:06.429
 sender addr:      128.105.37.145:5000
-sequence:         0
+sequence:         122
 length:           0
 payload:          0
 
@@ -65,7 +65,7 @@ Duration of the test:     1001  ms
 End Packet
 recv time:        2023-01-26 01:26:06.429
 sender addr:      128.105.37.145:5002
-sequence:         0
+sequence:         119
 length:           0
 payload:          0
 
