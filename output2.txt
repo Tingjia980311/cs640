@@ -80,42 +80,44 @@ DATA Packet
 recv time:    2023-01-26 01:48:42.984
 sender addr:  128.105.37.145:5002
 sequence:     110
-length:       9
+length:       10
 payload:      lit2
+
 
 DATA Packet
 recv time:    2023-01-26 01:48:43.985
 sender addr:  128.105.37.145:5000
 sequence:     120
-length:       2
+length:       3
 payload:      
 *
+
 
 End Packet
 recv time:    2023-01-26 01:48:43.985
 sender addr:  128.105.37.145:5002
-sequence:     122
+sequence:     119
 length:       0
 payload:      0
 
 Summary
 sender addr:             128.105.37.145:5002
 Total Data packets:      2
-Total Data bytes:        22
+Total Data bytes:        20
 Average packets/second:  1
 Duration of the test:    2002  ms
 
 End Packet
 recv time:     2023-01-26 01:48:44.986
 sender addr:   128.105.37.145:5000
-sequence:      119
+sequence:      122
 length:        0
 payload:       0
 
 Summary
 sender addr:             128.105.37.145:5000
 Total Data packets:      3
-Total Data bytes:        19
+Total Data bytes:        23
 Average packets/second:  1
 Duration of the test:    3003  ms
 
