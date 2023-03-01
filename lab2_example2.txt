@@ -1,0 +1,36 @@
+Eaxmple 2:
+Sending packets through two emulators
+
+==============================================================================================
+<tracker.txt>
+file.txt 1 mumble-01 2000
+==============================================================================================
+
+Topology:
+Sender (port 5000) ---- Emulator1 (port 6000) ---- Emulator2 (port 3000) ---- Requester (port 4000)
+
+<table2>
+mumble-01 6000 mumble-01 4000 mumble-01 3000 0 0
+mumble-01 6000 mumble-01 5000 mumble-01 5000 0 0
+mumble-01 3000 mumble-01 4000 mumble-01 4000 0 0
+mumble-01 3000 mumble-01 5000 mumble-01 6000 0 0
+
+<on command lines>
+# run sender
+python3 sender.py -p 5000 -g 4000 -r 100 -q 1 -l 10 -f mumble-01 -e 6000 -i 3 -t 1000
+
+# run emulator1
+python3 emulator.py -p 6000 -q 100 -f test2/table2 -l log02
+
+# run emulator2
+python3 emulator.py -p 3000 -q 100 -f test2/table2 -l log12
+
+# run requester
+python3 requester.py -p 4000 -f mumble-01 -e 3000 -o file.txt -w 10
+
+
+Expected Result:
+--> Request packet gets to sender, file gets to requester.
+--> log file is empty
+--> loss rate is around 0.0 printed on the sender side.
+--> output file should match input file
