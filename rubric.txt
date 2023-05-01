@@ -1,0 +1,25 @@
+In each forder, the command to run the test is in test/test.sh
+
+Test cases:
+
+10 pts: Requesting a file that lives on a single sender through a single emulator.  
+
+10 pts: Requesting a file that lives on a single sender through multiple emulators.
+
+10 pts: Requesting a file that is split among 2 different senders through a single emulator.
+
+10 pts: Requesting a file that is split among 2 different senders through different emulators.
+
+10 pts: Requesting a file that is split among 2 different senders, ensuring that packet delays are correctly implemented
+
+10 pts: Requesting a file that is split among 2 different senders with a relatively small queue size in the emulator (expecting some packet drops, looking for correct emulator behavior and correct sender retransmission)
+
+                                                                     
+10 pts: Requesting a file that is split among 2 different senders, testing for correct packet loss rate implementation in the emulator
+
+10 pts: Requesting a file that is split among 2 different senders, testing for correct packet priority implementation
+
+10 pts: Requesting a file that is split among 3 different senders through a single emulator.
+
+10 pts: Correct logging information for above testing cases.
+
